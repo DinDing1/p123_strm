@@ -1,0 +1,36 @@
+{
+  "name": "123pan-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "https-proxy-agent": "^7.0.6",
+    "ioredis": "^5.5.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "lodash-es": "^4.17.21",
+    "node-fetch": "^3.3.2",
+    "p-limit": "^6.2.0",
+    "qs": "^6.14.0",
+    "readline": "^1.3.0",
+    "sequelize": "^6.37.5",
+    "sqlite3": "^5.1.7",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
