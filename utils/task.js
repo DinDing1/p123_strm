@@ -1,7 +1,7 @@
 import logger from "./logger.js";
 import redis from "../redis.js";
 export class TaskQueen {
-  constructor({ qpsLimit = 5 } = {}) {
+  constructor({ qpsLimit = 1 } = {}) {
     this.tasks = []; // 任务列表
     this.qpsLimit = qpsLimit; // 最大同时运行任务数
     this.runTimeIndex = 0; // 当前正在执行任务数
