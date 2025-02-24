@@ -129,5 +129,5 @@ export class TaskQueen {
 
 // 示例使用这个类
 export const taskQueen = new TaskQueen({
-  qpsLimit: 20,
+  qpsLimit: 1,
 });
