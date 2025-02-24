@@ -14,25 +14,9 @@ const proxyDB = []
  * 固定代理池和动态代理池子混用。
  * @returns {HttpsProxyAgent}
  */
-export const getProxyAgent = async () => {
-    // 在proxyDB和redis中随机选择一个代理
-    const oldProxy =await redis.get('proxy_ip')
-    if(oldProxy){
-      const newDb = [...proxyDB];
-     forEach(10,()=>{
-        newDb.push(oldProxy);
-     })
-    //  打乱数组
-      newDb.sort(() => Math.random() - 0.5);
-      // 获取随机一个url
-      const randomIndex = randomInt(0, newDb.length - 1);
-      return new HttpsProxyAgent(newDb[randomIndex]);
-    } else  {
-      const proxyUrl = '';
-      return new HttpsProxyAgent(proxyUrl);
-    }
-    
-};
+      const res = await axios.get('xxx')(
+      const proxy_ip = res.data;
+      return new HttpsProxyAgent(proxy_ip);
 
 export const getUserInfo = async (cookie) => {
   try {
