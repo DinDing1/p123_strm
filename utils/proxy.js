@@ -7,7 +7,7 @@ import { forEach, sample, times } from "lodash-es";
 import redis from "../redis.js";
 
 // 固定代理池子
-const proxyDB = []
+const proxyDB = ["http://47.106.242.254:20209/getapi2?linePoolIndex=-1&packid=2&time=5&qty=1&port=1&format=html&sep=%3Cbr%3E&ct=1&usertype=18&uid=45645&accessName=dinding2&accessPassword=86FBF7EB7B17A101FE7084478487C5AE&skey=autoaddwhiteip"]
 
   /**
  * 获取代理 agent，避免重复使用同一代理。 
