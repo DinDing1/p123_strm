@@ -7,7 +7,7 @@ import { forEach, sample, times } from "lodash-es";
 import redis from "../redis.js";
 
 // 固定代理池子
-const proxyDB = ["http://api.xiequ.cn/VAD/GetIp.aspx?act=get&uid=85165&vkey=6E128B69197C97D810E3932460A9FADE&num=10&time=30&plat=1&re=0&type=0&so=1&ow=1&spl=1&addr=&db=1"]
+const proxyDB = []
 
   /**
  * 获取代理 agent，避免重复使用同一代理。 
